@@ -1,0 +1,107 @@
+.header__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    min-height: 75px;
+    background-color: black;
+    color: #fff;
+
+    &-links {
+        display: flex;
+        gap: 0 0.3rem;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        align-items: center;
+        height: 100vh;
+        padding: 2rem;
+        background-color: black;
+        visibility: hidden;
+
+        &-item {
+            display: block;
+            padding: 1.5rem;
+            font-size: 5vw;
+        }
+    }
+
+    &-burger {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.show-nav .header__navbar-links {
+    right: 0vw;
+    width: 100vw;
+    visibility: visible;
+}
+
+.header__navbar-burger-bar,
+.header__navbar-burger-bar::before,
+.header__navbar-burger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all .20s ease-in-out;
+}
+
+.header__navbar-burger-bar::before,
+.header__navbar-burger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.header__navbar-burger-bar::before {
+    transform: translateY(-12px);
+}
+
+.header__navbar-burger-bar::after {
+    transform: translateY(12px);
+}
+
+.show-nav .header__navbar-burger-bar::before {
+    transform: rotate(45deg);
+}
+
+.show-nav .header__navbar-burger-bar::after {
+    transform: rotate(-45deg);
+}
+
+.show-nav .header__navbar-burger-bar {
+    width: 0;
+    background: transparent;
+}
+
+
+@media screen and (min-width:767px) {
+    .header__navbar {
+        &-links {
+            flex-direction: row;
+            height: auto;
+        }
+
+        &-burger {
+            display: none;
+        }
+    }
+}
