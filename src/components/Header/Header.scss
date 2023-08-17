@@ -7,7 +7,6 @@
     position: fixed;
     width: 100%;
     min-height: 75px;
-    background-color: black;
     color: #fff;
 
     &-links {
@@ -18,7 +17,7 @@
         position: fixed;
         right: -100vw;
         bottom: 0;
-        align-items: center;
+        align-items: baseline;
         height: 100vh;
         padding: 2rem;
         background-color: black;
@@ -47,7 +46,7 @@
 }
 
 .show-nav .header__navbar-links {
-    right: 0vw;
+    right: -50vw;
     width: 100vw;
     visibility: visible;
 }
