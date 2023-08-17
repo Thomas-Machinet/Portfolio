@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     position: fixed;
     width: 100%;
     min-height: 75px;
@@ -36,8 +36,8 @@
         background: transparent;
         border: none;
         position: fixed;
-        top: 1rem;
-        right: 1rem;
+        top: 1.5rem;
+        right: 1.5rem;
 
         &:hover {
             cursor: pointer;
@@ -96,11 +96,20 @@
     .header__navbar {
         &-links {
             flex-direction: row;
-            height: auto;
         }
 
         &-burger {
             display: none;
         }
+    }
+}
+
+.show-nav,
+.hide-nav .header__navbar-links {
+
+
+
+    &-item {
+        font-size: 1vw;
     }
 }
