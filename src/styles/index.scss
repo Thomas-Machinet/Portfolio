@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(62, 61, 61);
+    background-color: rgb(55, 53, 62);
 }
 
 ul {
@@ -28,7 +28,7 @@ p {
 }
 
 @media screen and (min-width:767px) {
-    * {
+    .main {
         width: 70%;
         margin: auto;
     }
