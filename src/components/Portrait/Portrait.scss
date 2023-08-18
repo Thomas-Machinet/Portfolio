@@ -1,0 +1,128 @@
+@use '../../styles/vars' as v;
+
+.portrait {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__face {
+        width: 60%;
+
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: radial-gradient(#fff, #0000);
+        animation: background 10s linear infinite;
+        margin-bottom: 3rem;
+    }
+
+    &__resume {
+        color: v.$font-color;
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        &-intro {
+            font-size: 7vw;
+            font-weight: bold;
+            background: linear-gradient(to right, #98b2e7, #4272d2,
+                    #ca38f2, #ca38f2);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        &-name {
+            font-size: 9vw;
+            font-weight: bold;
+            background: linear-gradient(to right, #98b2e7, #4272d2,
+                    #ca38f2, #ca38f2);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background-color: #2d72fc48;
+            width: 10rem;
+            border-radius: 20px;
+            transition: 0.3s;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width:767px) {
+    .portrait {
+        flex-direction: row;
+        margin-top: 20rem;
+
+        &__face {
+            width: 60vw;
+            margin-bottom: 0;
+            margin-right: 3rem;
+        }
+
+        &__resume {
+            font-size: 1.5rem;
+
+            &-intro {
+                font-size: 3rem;
+            }
+
+            &-name {
+                font-size: 5rem;
+            }
+        }
+
+        &__link-item:hover {
+            background-color: v.$font-color;
+            box-shadow: 0 7px 0 rgb(0, 0, 0);
+            scale: 1.1;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+/* Animation */
+@keyframes background {
+
+    0%,
+    100% {
+        background-color: #90b5ff;
+    }
+
+    10%,
+    90% {
+        background-color: #7ba7ff;
+    }
+
+    20%,
+    80% {
+        background-color: #4a85f9;
+    }
+
+    30%,
+    70% {
+        background-color: #2d72fc;
+    }
+
+    40%,
+    60% {
+        background-color: #5f0378;
+    }
+
+    50% {
+        background-color: #390148;
+    }
+}
