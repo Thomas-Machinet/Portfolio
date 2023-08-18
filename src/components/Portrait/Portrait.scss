@@ -1,3 +1,5 @@
+@use '../../styles/vars' as v;
+
 .portrait {
     display: flex;
     align-items: center;
@@ -15,7 +17,7 @@
     }
 
     &__resume {
-        color: #fff;
+        color: v.$font-color;
         font-size: 5vw;
         display: flex;
         flex-direction: column;
@@ -40,6 +42,32 @@
     }
 }
 
+@media screen and (min-width:767px) {
+    .portrait {
+        flex-direction: row;
+        margin-top: 20rem;
+
+        &__face {
+            width: 60vw;
+            margin-bottom: 0;
+            margin-right: 3rem;
+        }
+
+        &__resume {
+            font-size: 1.5rem;
+
+            &-intro {
+                font-size: 3rem;
+            }
+
+            &-name {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+/* Animation */
 @keyframes background {
 
     0%,

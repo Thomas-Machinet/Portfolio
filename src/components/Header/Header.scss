@@ -1,13 +1,14 @@
+@use '../../styles/vars' as v;
+
 .header__navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
-    position: fixed;
     width: 100%;
     min-height: 75px;
-    color: #fff;
+    color: v.$font-color;
 
     &-links {
         display: flex;
@@ -95,14 +96,14 @@
 
 @media screen and (min-width:767px) {
     .header__navbar {
-        padding: 0 20vw;
+        padding: 0 25vw;
 
         &-links {
             flex-direction: row;
             gap: 5rem;
 
             &-item {
-                font-weight: 300;
+                font-size: 3vw;
             }
         }
 
@@ -145,6 +146,7 @@
             &:hover {
                 animation: spin 1s linear;
                 scale: 1.5;
+                color: #fff;
             }
         }
     }
