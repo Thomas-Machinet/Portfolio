@@ -5,7 +5,9 @@ import './Portrait.scss'
 function Portrait() {
     return (
         <>
+            <h1 className="title">WHO I'M I ?</h1>
             <section className="portrait">
+
                 <img className="portrait__face" src={face} alt='face'></img>
                 <p className="portrait__resume"><span className="portrait__resume-intro">Hello there! I'm</span>
                     <span className="portrait__resume-name">Thomas Machinet</span>After training in the field of Web development, I gained numerous skills and knowledge through projects carried out in various programming languages.
