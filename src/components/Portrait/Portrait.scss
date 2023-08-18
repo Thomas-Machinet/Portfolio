@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 1.5rem;
 
     &__face {
         width: 60%;
@@ -21,6 +20,7 @@
         font-size: 5vw;
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
 
         &-intro {
             font-size: 7vw;
@@ -38,6 +38,23 @@
                     #ca38f2, #ca38f2);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+
+        &-item {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            background-color: #2d72fc;
+            width: 8rem;
+            border-radius: 20px;
+            transition: 0.3s;
         }
     }
 }
@@ -63,6 +80,12 @@
             &-name {
                 font-size: 5rem;
             }
+        }
+
+        &__link-item:hover {
+            background-color: #0e2248;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+            scale: 1.1;
         }
     }
 }
