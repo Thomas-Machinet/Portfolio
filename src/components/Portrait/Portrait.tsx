@@ -17,14 +17,16 @@ function Portrait() {
                     href="https://www.linkedin.com/in/thomas-machinet-71201926a"
                     className="portrait__link-item"
                     target='_blank'>
-                    <Linkedin />
+                    <Linkedin color='#57c7f0'
+                        size='30px' />
                     Linkedin
                 </a>
                 <a
                     href="https://github.com/Thomas-Machinet"
                     className="portrait__link-item"
                     target='_blank'>
-                    <GitHub />
+                    <GitHub color='#57c7f0'
+                        size='30px' />
                     GitHub
                 </a>
 

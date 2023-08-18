@@ -49,12 +49,14 @@
 
         &-item {
             display: flex;
+            align-items: center;
             gap: 10px;
             padding: 10px;
-            background-color: #2d72fc;
-            width: 8rem;
+            background-color: #2d72fc48;
+            width: 10rem;
             border-radius: 20px;
             transition: 0.3s;
+            font-size: 1.2rem;
         }
     }
 }
@@ -83,9 +85,11 @@
         }
 
         &__link-item:hover {
-            background-color: #0e2248;
-            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+            background-color: v.$font-color;
+            box-shadow: 0 7px 0 rgb(0, 0, 0);
             scale: 1.1;
+            color: black;
+            font-weight: bold;
         }
     }
 }
