@@ -98,12 +98,16 @@
             }
         }
 
-        &__link-item:hover {
-            background-color: v.$font-color;
-            box-shadow: 0 7px 0 rgb(0, 0, 0);
-            scale: 1.1;
-            color: black;
-            font-weight: bold;
+        &__link {
+            margin-bottom: 15rem;
+
+            &-item:hover {
+                background-color: v.$font-color;
+                box-shadow: 0 7px 0 rgb(0, 0, 0);
+                scale: 1.1;
+                color: black;
+                font-weight: bold;
+            }
         }
     }
 }
