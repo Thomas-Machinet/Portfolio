@@ -48,6 +48,7 @@
         align-items: center;
         justify-content: center;
         transition: 5s;
+        cursor: pointer;
 
         &-text {
             visibility: hidden;
@@ -60,7 +61,7 @@
 
         &:hover .project__card-text {
             visibility: visible;
-            animation: slideFromLeft 0.5s forwards;
+            animation: slideFromLeft 0.7s forwards;
         }
 
         &:hover {
