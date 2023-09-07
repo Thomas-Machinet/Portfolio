@@ -1,5 +1,6 @@
 import './Card.scss';
 import { ProjectItem, Techno } from '../../../assets/Interface/projectInterface';
+import { GitHub } from 'react-feather';
 import projectVisual from "../../../../public/Desktop Screenshot 2023.08.21 - 15.09.15.74.png"
 
 function Card({ resume, techno, title, link }: ProjectItem) {
@@ -22,6 +23,7 @@ function Card({ resume, techno, title, link }: ProjectItem) {
                             </li>
                         ))}
                     </ul>
+                    <a target='_blank' href={link} className="project__card-link"><GitHub /></a>
                 </div>
             </div>
         </>

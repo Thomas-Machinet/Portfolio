@@ -24,6 +24,13 @@
             border-radius: 15px;
         }
     }
+
+    &-link {
+        margin-top: 1rem;
+        padding: 10px;
+        background-color: #4272d2;
+        border-radius: 10px;
+    }
 }
 
 
@@ -32,10 +39,7 @@
         width: 50%;
         border-radius: 15px;
         z-index: 2;
-
-        &:hover {
-            filter: brightness(0.2);
-        }
+        transition: 0.3s;
     }
 
     .project__card {
@@ -43,24 +47,35 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        transition: 5s;
 
         &-text {
             visibility: hidden;
             background: #66B4FF;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 50%;
             z-index: 1;
             position: relative;
-            left: -100%;
-            /* Déplacez-le initialement hors de la vue */
-            ;
-
-
         }
 
         &:hover .project__card-text {
             visibility: visible;
-            animation: slideFromLeft 1s forwards;
+            animation: slideFromLeft 0.5s forwards;
+        }
+
+        &:hover {
+            background: linear-gradient(to right, #98b2e7, #4272d2,
+                    #4272d2, #ca38f2);
+        }
+
+        &-link {
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #fff;
+                color: black;
+                box-shadow: 5px 5px 5px gray;
+            }
         }
     }
 }
