@@ -1,5 +1,8 @@
 import './App.css'
 
+// Import Data
+import data from './data/project.js'
+
 // importation components
 import Header from './components/Header/Header'
 import Portrait from './components/Portrait/Portrait'
@@ -14,7 +17,7 @@ function App() {
       <Header />
       <main className="main">
         <Portrait />
-        <Project />
+        <Project data={data} />
       </main>
     </>
   )
