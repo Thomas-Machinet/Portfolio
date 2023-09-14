@@ -5,7 +5,7 @@ import './Portrait.scss'
 function Portrait() {
     return (
         <>
-            <h1 className="title">WHO I'M I ?</h1>
+            <h2 className="title">WHO I'M I ?</h2>
             <section className="portrait">
 
                 <img className="portrait__face" src={face} alt='face'></img>
