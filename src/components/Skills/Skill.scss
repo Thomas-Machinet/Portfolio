@@ -1,0 +1,96 @@
+@use '../../styles/vars' as v;
+
+.skillHeader {
+    &__title {
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 7vw;
+    }
+}
+
+
+.skillBox {
+    &__frontEnd {
+        &--title {
+            text-align: center;
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 15px 15px 0 0;
+
+            &-desktop {
+                display: none;
+            }
+        }
+
+        &--box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            background-color: v.$background-project;
+            padding: 1rem;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 2rem;
+        }
+
+        &--item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 25%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    .skillHeader {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+
+        &__title {
+            font-size: 3vw;
+        }
+    }
+
+    .skillBox {
+        &__frontEnd {
+            &--title {
+                display: none;
+
+                &-desktop {
+                    display: block;
+                    font-size: 2rem;
+                    color: #fff;
+                }
+            }
+
+            &--box {
+                flex-direction: column;
+                align-items: center;
+                border-radius: 30px;
+                background-color: transparent;
+                cursor: pointer;
+                transition: 0.3s;
+                gap: 1rem;
+
+                &:hover {
+                    background-color: v.$background-project;
+                }
+            }
+
+            &--item {
+                transition: 0.3s;
+                gap: 0;
+
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
