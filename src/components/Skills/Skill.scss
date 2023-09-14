@@ -49,7 +49,7 @@
     .skillHeader {
         display: flex;
         justify-content: center;
-        gap: 10rem;
+        gap: 5rem;
 
         &__title {
             font-size: 3vw;
@@ -75,6 +75,7 @@
                 background-color: transparent;
                 cursor: pointer;
                 transition: 0.3s;
+                gap: 1rem;
 
                 &:hover {
                     background-color: v.$background-project;
@@ -83,6 +84,8 @@
 
             &--item {
                 transition: 0.3s;
+                gap: 0;
+
 
                 &:hover {
                     scale: 1.1;
