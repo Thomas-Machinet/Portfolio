@@ -1,5 +1,4 @@
 import './App.css'
-
 // Import Data
 import data from './data/project.js';
 import skillFrontEnd from './data/skillFrontEnd.js';
