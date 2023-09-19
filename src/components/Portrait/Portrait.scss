@@ -16,6 +16,10 @@
         animation: background 10s linear infinite;
         margin-bottom: 3rem;
 
+        &-desktop {
+            display: none;
+        }
+
 
     }
 
@@ -67,17 +71,22 @@
 }
 
 @media screen and (min-width:767px) {
-
+    .title {
+        margin-top: 5rem;
+    }
 
 
     .portrait {
         flex-direction: row;
-        margin-top: 3rem;
+        gap: 2rem;
 
         &__face {
-            width: 60vw;
-            margin-bottom: 0;
-            margin-right: 3rem;
+            display: none;
+
+            &-desktop {
+                display: block;
+                width: 30%;
+            }
         }
 
         &__resume {
@@ -88,7 +97,10 @@
             }
 
             &-name {
-                font-size: 5rem;
+                font-size: 5.5rem;
+                padding: 3rem;
+
+
             }
         }
 
@@ -104,6 +116,8 @@
             }
         }
     }
+
+
 
 
 }
