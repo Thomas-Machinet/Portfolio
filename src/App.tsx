@@ -9,6 +9,7 @@ import Portrait from './components/Portrait/Portrait';
 import Project from './components/Project/Project';
 import Skill from './components/Skills/Skill.js';
 import Contact from './components/Contact/Contact.js';
+import Footer from './components/Footer/Footer.js';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
         <Skill skillFrontEnd={skillFrontEnd} />
         <Contact />
       </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
     </>
   )
 }

@@ -65,6 +65,7 @@
                 cursor: pointer;
                 transition: 0.3s;
                 gap: 1rem;
+                border: dashed v.$background-project;
 
                 &:hover {
                     background-color: v.$background-project;
