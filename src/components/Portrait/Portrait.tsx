@@ -1,4 +1,4 @@
-import face from '../../assets/20230818_095300-removebg-preview.png'
+import face from '../../../public/Design_sans_titre__1_-removebg-preview.png'
 import { GitHub, Linkedin } from 'react-feather';
 import './Portrait.scss'
 

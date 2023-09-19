@@ -1,0 +1,78 @@
+@use '../../../styles/vars' as v;
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+html,
+body {
+    background: #f1f1f1;
+    font-family: 'Merriweather', sans-serif;
+}
+
+
+
+form {
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    resize: none;
+}
+
+textarea {
+    margin-bottom: 1rem;
+}
+
+#input-submit {
+    color: white;
+    background: #9582d7;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#input-submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: v.$background-project;
+}
+
+textarea {
+    height: 150px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+
+.half {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+
+.cf:before,
+.cf:after {}
+
+.cf:after {
+    clear: both;
+}
