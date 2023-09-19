@@ -1,11 +1,6 @@
 @use '../../styles/vars' as v;
 
-.project__header {
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 7vw;
-}
+
 
 .project {
     padding: 1rem;
@@ -16,9 +11,7 @@
 }
 
 @media screen and (min-width:767px) {
-    .project__header {
-        font-size: 3vw;
-    }
+
 
     .project {
         flex-direction: column;

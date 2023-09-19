@@ -1,11 +1,11 @@
-import face from '../../assets/20230818_095300-removebg-preview.png'
+import face from '../../../public/Design_sans_titre__1_-removebg-preview.png'
 import { GitHub, Linkedin } from 'react-feather';
 import './Portrait.scss'
 
 function Portrait() {
     return (
         <>
-            <h1 className="title">WHO I'M I ?</h1>
+            <h2 className="title">WHO I'M I ?</h2>
             <section className="portrait">
 
                 <img className="portrait__face" src={face} alt='face'></img>

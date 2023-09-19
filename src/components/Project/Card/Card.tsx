@@ -10,7 +10,7 @@ function Card({ resume, techno, title, link }: ProjectItem) {
             <div className="project__card">
                 <img src={projectVisual} alt="project" className="project__image" />
                 <div className="project__card-text">
-                    <h2 className="project__card-title">{title}</h2>
+                    <h3 className="project__card-title">{title}</h3>
                     <p className="project__card-resume">{resume}</p>
                     <ul className="project__card-techno">
                         {techno.map((technoItem: Techno) => (

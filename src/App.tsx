@@ -1,5 +1,4 @@
 import './App.css'
-
 // Import Data
 import data from './data/project.js';
 import skillFrontEnd from './data/skillFrontEnd.js';
@@ -9,6 +8,7 @@ import Header from './components/Header/Header';
 import Portrait from './components/Portrait/Portrait';
 import Project from './components/Project/Project';
 import Skill from './components/Skills/Skill.js';
+import Contact from './components/Contact/Contact.js';
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Portrait />
         <Project data={data} />
         <Skill skillFrontEnd={skillFrontEnd} />
+        <Contact />
       </main>
     </>
   )

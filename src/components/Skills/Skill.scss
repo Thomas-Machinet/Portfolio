@@ -1,13 +1,6 @@
 @use '../../styles/vars' as v;
 
-.skillHeader {
-    &__title {
-        color: #fff;
-        text-align: center;
-        padding: 2rem 0;
-        font-size: 7vw;
-    }
-}
+
 
 
 .skillBox {
@@ -50,10 +43,6 @@
         display: flex;
         justify-content: center;
         gap: 5rem;
-
-        &__title {
-            font-size: 3vw;
-        }
     }
 
     .skillBox {
