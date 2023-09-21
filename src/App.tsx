@@ -17,6 +17,7 @@ import { Animator, Fade, FadeIn, FadeOut, MoveIn, MoveOut, ScrollContainer, Scro
 function App() {
 
   const isMobile = window.innerWidth <= 768;
+
   return (
     <>
       <Header />
@@ -24,22 +25,33 @@ function App() {
         <main className="main">
           <ScrollContainer>
             <ScrollPage>
-              <Animator animation={batch(Fade(), MoveOut(500, 0))}>
+              <Animator animation={batch(Fade(), MoveOut(0, -1000))}>
                 <Portrait />
               </Animator>
             </ScrollPage>
             <ScrollPage>
-              <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0))}>
+              <br></br>
+            </ScrollPage>
+            <ScrollPage>
+              <Animator animation={batch(Fade(), Sticky(), MoveIn(-1000, 0))}>
                 <Project data={data} />
               </Animator>
             </ScrollPage>
+            <ScrollPage>
+              <br></br>
+            </ScrollPage>
+
             <ScrollPage>
               <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0))}>
                 <Skill skillFrontEnd={skillFrontEnd} />
               </Animator>
             </ScrollPage>
             <ScrollPage>
-              <Animator animation={batch(FadeIn(), Sticky(), MoveIn(-1000, 0))}>
+              <br></br>
+            </ScrollPage>
+
+            <ScrollPage>
+              <Animator animation={batch(FadeIn(), Sticky(), MoveIn(0, -1000))}>
                 <Contact />
               </Animator>
             </ScrollPage>
