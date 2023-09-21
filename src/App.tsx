@@ -10,6 +10,8 @@ import Project from './components/Project/Project';
 import Skill from './components/Skills/Skill.js';
 import Contact from './components/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
+import { Animator, Fade, MoveIn, MoveOut, ScrollContainer, ScrollPage, batch } from 'react-scroll-motion';
+
 
 
 function App() {
@@ -19,10 +21,16 @@ function App() {
     <>
       <Header />
       <main className="main">
-        <Portrait />
-        <Project data={data} />
-        <Skill skillFrontEnd={skillFrontEnd} />
-        <Contact />
+        <ScrollContainer>
+          <ScrollPage>
+            <Animator animation={batch(Fade(), MoveOut(1000, -200))}>
+              <Portrait />
+            </Animator>
+          </ScrollPage>
+          <Project data={data} />
+          <Skill skillFrontEnd={skillFrontEnd} />
+          <Contact />
+        </ScrollContainer>
       </main>
       <footer className="footer">
         <Footer />

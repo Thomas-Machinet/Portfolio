@@ -51,7 +51,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 5s;
+        transition: 0.3s;
         cursor: pointer;
 
         &-text {
@@ -69,8 +69,7 @@
         }
 
         &:hover {
-            background: linear-gradient(to right, #98b2e7, #4272d2,
-                    #4272d2, #ca38f2);
+            background: v.$background-project;
         }
 
         &-link {
@@ -88,12 +87,12 @@
 /* Définir l'animation de glissement depuis la gauche */
 @keyframes slideFromLeft {
     0% {
-        left: -50%;
+        top: -50%;
         /* Commencez à l'extérieur à gauche */
     }
 
     100% {
-        left: 0%;
+        top: 0%;
         /* Finissez à la position d'origine */
     }
 }
