@@ -59,10 +59,13 @@
 
         &-item {
             display: flex;
+            font-weight: bold;
+            color: #453948;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             padding: 10px;
-            background-color: #2d72fc48;
+            background-color: #ffffff;
             width: 10rem;
             border-radius: 20px;
             transition: 0.3s;
@@ -71,7 +74,7 @@
     }
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:1000px) {
     .title {
         margin-top: 5rem;
     }
@@ -80,13 +83,16 @@
     .portrait {
         flex-direction: row;
         gap: 2rem;
+        padding: 3rem;
+        background-color: #453948;
+        border-radius: 20px;
 
         &__face {
             display: none;
 
             &-desktop {
                 display: block;
-                width: 30%;
+                width: 40%;
             }
         }
 
@@ -107,6 +113,7 @@
 
         &__link {
             margin-bottom: 15rem;
+
 
             &-item:hover {
                 background-color: v.$font-color;

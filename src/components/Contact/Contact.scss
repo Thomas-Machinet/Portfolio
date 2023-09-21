@@ -4,3 +4,13 @@
         align-items: center;
     }
 }
+
+@media screen and (min-width:767px) {
+    .contact {
+        &__container {
+            background-color: #5c5969;
+            padding: 3rem 25rem;
+            border-radius: 30px;
+        }
+    }
+}

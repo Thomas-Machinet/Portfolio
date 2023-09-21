@@ -11,6 +11,7 @@ import Skill from './components/Skills/Skill.js';
 import Contact from './components/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
 import { Animator, Fade, FadeIn, FadeOut, MoveIn, MoveOut, ScrollContainer, ScrollPage, Sticky, batch } from 'react-scroll-motion';
+import { Route, Routes } from 'react-router-dom';
 
 
 
@@ -33,7 +34,7 @@ function App() {
               <br></br>
             </ScrollPage>
             <ScrollPage>
-              <Animator animation={batch(Fade(), Sticky(), MoveIn(-1000, 0))}>
+              <Animator animation={batch(Fade(), Sticky(), MoveIn(-1000, -999))}>
                 <Project data={data} />
               </Animator>
             </ScrollPage>
