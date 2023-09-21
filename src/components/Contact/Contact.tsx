@@ -5,7 +5,7 @@ import Form from './Form/Form';
 function Contact() {
     return (
         <section className="contact">
-            <h2 className="contact__title">Contact</h2>
+            <h2 className="contact__title">CONTACT</h2>
             <div className="contact__container">
                 <Letter />
                 <Form />

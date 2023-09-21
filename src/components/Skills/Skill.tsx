@@ -6,7 +6,7 @@ function Skill({ skillFrontEnd }: SkillsArray) {
 
     return (
         <>
-            <h2 className="skillHeader__title">Skills</h2>
+            <h2 className="skillHeader__title">SKILLS</h2>
             <section className="skillHeader">
                 <h3 className="skillBox__frontEnd--title">Front-End</h3>
                 <div className="skillBox__frontEnd--box">

@@ -10,28 +10,51 @@ import Project from './components/Project/Project';
 import Skill from './components/Skills/Skill.js';
 import Contact from './components/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
-import { Animator, Fade, MoveIn, MoveOut, ScrollContainer, ScrollPage, batch } from 'react-scroll-motion';
+import { Animator, Fade, FadeIn, FadeOut, MoveIn, MoveOut, ScrollContainer, ScrollPage, Sticky, batch } from 'react-scroll-motion';
 
 
 
 function App() {
 
-
+  const isMobile = window.innerWidth <= 768;
   return (
     <>
       <Header />
-      <main className="main">
-        <ScrollContainer>
-          <ScrollPage>
-            <Animator animation={batch(Fade(), MoveOut(1000, -200))}>
-              <Portrait />
-            </Animator>
-          </ScrollPage>
+      {!isMobile &&
+        <main className="main">
+          <ScrollContainer>
+            <ScrollPage>
+              <Animator animation={batch(Fade(), MoveOut(500, 0))}>
+                <Portrait />
+              </Animator>
+            </ScrollPage>
+            <ScrollPage>
+              <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0))}>
+                <Project data={data} />
+              </Animator>
+            </ScrollPage>
+            <ScrollPage>
+              <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0))}>
+                <Skill skillFrontEnd={skillFrontEnd} />
+              </Animator>
+            </ScrollPage>
+            <ScrollPage>
+              <Animator animation={batch(FadeIn(), Sticky(), MoveIn(-1000, 0))}>
+                <Contact />
+              </Animator>
+            </ScrollPage>
+          </ScrollContainer>
+        </main >
+      }
+      {
+        isMobile &&
+        <main className="main">
+          <Portrait />
           <Project data={data} />
           <Skill skillFrontEnd={skillFrontEnd} />
           <Contact />
-        </ScrollContainer>
-      </main>
+        </main>
+      }
       <footer className="footer">
         <Footer />
       </footer>
