@@ -34,25 +34,45 @@ function Portrait() {
             </motion.section>
             <div className="portrait__link">
 
-                <a
+                <motion.a
                     href="https://www.linkedin.com/in/thomas-machinet-71201926a"
                     className="portrait__link-item"
-                    target='_blank'>
+                    target='_blank'
+                    animate={{ x: [-2000, 0] }}
+                    transition={{
+                        ease: "easeInOut",
+                        duration: 0.5,
+                        delay: 0.5,
+                    }}>
                     <Linkedin color='#453948'
                         size='30px' />
                     Linkedin
-                </a>
-                <a
+                </motion.a>
+                <motion.a
                     href="https://github.com/Thomas-Machinet"
                     className="portrait__link-item"
-                    target='_blank'>
+                    target='_blank'
+                    animate={{ x: [-2000, 0] }}
+                    transition={{
+                        ease: "easeInOut",
+                        duration: 0.5,
+                        delay: 0.8,
+                    }}>
                     <GitHub color='#453948'
                         size='30px' />
                     GitHub
-                </a>
-                <a href={CV} className="portrait__link-item" download>
+                </motion.a>
+                <motion.a href={CV} className="portrait__link-item"
+                    download
+                    animate={{ x: [-2000, 0] }}
+                    transition={{
+                        ease: "easeInOut",
+                        duration: 0.5,
+                        delay: 1.1,
+                    }}>
                     <Download color='#453948'
-                        size='30px' />CV</a>
+                        size='30px' />CV
+                </motion.a>
 
 
             </div>
