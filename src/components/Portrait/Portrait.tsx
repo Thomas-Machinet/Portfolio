@@ -18,11 +18,11 @@ function Portrait() {
                 className="title">WHO I'M I ?</motion.h2>
             <motion.section
                 className="portrait"
-                animate={{ x: [1500, 0] }}
+                animate={{ x: [1500, 0], opacity: [0, 1] }}
                 transition={{
                     ease: "linear",
-                    duration: 2,
-                    x: { duration: 1 }
+                    duration: 1,
+                    delay: 1
                 }}>
 
 
@@ -42,7 +42,7 @@ function Portrait() {
                     transition={{
                         ease: "easeInOut",
                         duration: 0.5,
-                        delay: 0.5,
+                        delay: 2,
                     }}>
                     <Linkedin color='#453948'
                         size='30px' />
@@ -56,7 +56,7 @@ function Portrait() {
                     transition={{
                         ease: "easeInOut",
                         duration: 0.5,
-                        delay: 0.8,
+                        delay: 2.3,
                     }}>
                     <GitHub color='#453948'
                         size='30px' />
@@ -68,7 +68,7 @@ function Portrait() {
                     transition={{
                         ease: "easeInOut",
                         duration: 0.5,
-                        delay: 1.1,
+                        delay: 2.6,
                     }}>
                     <Download color='#453948'
                         size='30px' />CV
