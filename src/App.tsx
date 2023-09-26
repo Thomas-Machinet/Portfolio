@@ -21,12 +21,14 @@ import { ArrowUpCircle } from 'react-feather';
 
 function App() {
 
-
+  const isMobile = window.innerWidth <= 768
 
   return (
     <>
-      <a href='#'
-        className='arrowUp'><ArrowUpCircle size="50px" /></a>
+      {!isMobile &&
+        <a href='#'
+          className='arrowUp'><ArrowUpCircle size="50px" /></a>
+      }
       <Header />
       <main className="main">
         <Portrait />

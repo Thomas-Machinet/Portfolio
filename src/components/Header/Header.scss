@@ -40,6 +40,7 @@
         position: fixed;
         top: 1.5rem;
         right: 1.5rem;
+        z-index: 2;
 
         &:hover {
             cursor: pointer;
@@ -51,6 +52,8 @@
     right: -50vw;
     width: 100vw;
     visibility: visible;
+    z-index: 1;
+
 }
 
 .header__navbar-burger-bar,
@@ -63,6 +66,7 @@
     border-radius: 3px;
     background-color: #fff;
     transition: all .20s ease-in-out;
+
 }
 
 .header__navbar-burger-bar::before,
