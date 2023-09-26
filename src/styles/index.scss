@@ -36,6 +36,19 @@ h2 {
     font-size: 7vw;
 }
 
+.arrowUp {
+    position: fixed;
+    color: rgba(255, 255, 255, 0.434);
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+    transition: 0.5s;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
 @media screen and (min-width:767px) {
 
     h2 {

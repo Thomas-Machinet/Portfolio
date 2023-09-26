@@ -12,6 +12,8 @@ import Contact from './components/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
 import { Reveal } from './utils/Reveal.js';
 
+import { ArrowUpCircle } from 'react-feather';
+
 
 
 
@@ -23,6 +25,8 @@ function App() {
 
   return (
     <>
+      <a href='#'
+        className='arrowUp'><ArrowUpCircle size="50px" /></a>
       <Header />
       <main className="main">
         <Portrait />
