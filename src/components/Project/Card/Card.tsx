@@ -2,12 +2,22 @@ import './Card.scss';
 import { ProjectItem, Techno } from '../../../assets/Interface/projectInterface';
 import { GitHub } from 'react-feather';
 import projectVisual from "../../../../public/Desktop Screenshot 2023.08.21 - 15.09.15.74.png"
+import { motion } from 'framer-motion';
 
 function Card({ resume, techno, title, link }: ProjectItem) {
 
     return (
         <>
-            <div className="project__card">
+            <motion.div
+                className="project__card"
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 2,
+                    delay: 1,
+                    ease: [0, 0.5, 0.7, 1]
+                }}
+            >
                 <img src={projectVisual} alt="project" className="project__image" />
                 <div className="project__card-text">
                     <h3 className="project__card-title">{title}</h3>
@@ -25,7 +35,7 @@ function Card({ resume, techno, title, link }: ProjectItem) {
                     </ul>
                     <a target='_blank' href={link} className="project__card-link"><GitHub /></a>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
