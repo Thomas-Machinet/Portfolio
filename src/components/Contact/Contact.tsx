@@ -23,6 +23,7 @@ function Contact() {
             className="contact"
         >
             <motion.h2
+                id='Contact '
                 className="contact__title"
                 variants={{
                     hidden: { opacity: 0, x: -500 },

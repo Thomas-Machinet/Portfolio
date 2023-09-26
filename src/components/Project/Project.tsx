@@ -30,6 +30,7 @@ function Project({ data }: ProjectArray) {
         <>
             <div  >
                 <motion.h2
+                    id='Projects'
                     variants={{
                         hidden: { opacity: 0, x: -500 },
                         visible: { opacity: 1, x: 0 }
@@ -42,6 +43,7 @@ function Project({ data }: ProjectArray) {
                 </motion.h2>
             </div>
             <motion.section
+
                 ref={ref}
                 className="project"
                 variants={{

@@ -1,10 +1,12 @@
 import './Header.scss';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link"
 
 function Header() {
 
     const [showLinks, setShowLinks] = useState(false)
+
+
 
 
 
@@ -16,13 +18,13 @@ function Header() {
             <div className='header__navbar-logo'>Logo</div>
             <ul className='header__navbar-links'>
                 <li >
-                    <Link to="/Projects" className='header__navbar-links-item'>Projects</Link>
+                    <Link to="#Projects" className='header__navbar-links-item'>Projects</Link>
                 </li>
                 <li >
-                    <Link to="/Skills" className='header__navbar-links-item'>Skills</Link>
+                    <Link to="#Skills" className='header__navbar-links-item'>Skills</Link>
                 </li>
                 <li >
-                    <Link to="/Contact" className='header__navbar-links-item'>Contact</Link>
+                    <Link to="#Contact" className='header__navbar-links-item'>Contact</Link>
                 </li>
             </ul>
             <button className='header__navbar-burger'
