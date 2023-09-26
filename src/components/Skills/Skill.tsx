@@ -25,6 +25,7 @@ function Skill({ skillFrontEnd }: SkillsArray) {
     return (
         <>
             <motion.h2 className="skillHeader__title"
+                id='Skills'
 
                 variants={{
                     hidden: { opacity: 0, x: -500 },
