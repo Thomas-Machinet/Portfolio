@@ -28,7 +28,7 @@ function Project({ data }: ProjectArray) {
 
     return (
         <>
-            <div ref={ref} >
+            <div  >
                 <motion.h2
                     variants={{
                         hidden: { opacity: 0, x: -500 },
@@ -36,12 +36,13 @@ function Project({ data }: ProjectArray) {
                     }}
                     initial="hidden"
                     animate={mainControls}
-                    transition={{ duration: 1.5, delay: 1 }}
+                    transition={{ duration: 1.5, delay: 0.3 }}
                     className="project__header"
                 >PROJECT
                 </motion.h2>
             </div>
             <motion.section
+                ref={ref}
                 className="project"
                 variants={{
                     hidden: { opacity: 0, y: 500 },
@@ -49,7 +50,7 @@ function Project({ data }: ProjectArray) {
                 }}
                 initial="hidden"
                 animate={projectControls}
-                transition={{ duration: 1.5, delay: 1 }}>
+                transition={{ duration: 1.5, delay: 0.3 }}>
                 {data.map((project: ProjectItem) => (
                     <Card key={project.id} {...project} />
                 ))}

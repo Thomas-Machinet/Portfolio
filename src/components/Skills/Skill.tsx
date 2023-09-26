@@ -25,7 +25,7 @@ function Skill({ skillFrontEnd }: SkillsArray) {
     return (
         <>
             <motion.h2 className="skillHeader__title"
-                ref={ref}
+
                 variants={{
                     hidden: { opacity: 0, x: -500 },
                     visible: { opacity: 1, x: 0 }
@@ -34,7 +34,8 @@ function Skill({ skillFrontEnd }: SkillsArray) {
                 animate={mainControls}
                 transition={{ duration: 1.5, delay: 1 }}>SKILLS
             </motion.h2>
-            <section className="skillHeader">
+            <section className="skillHeader"
+                ref={ref}>
                 <h3 className="skillBox__frontEnd--title">Front-End</h3>
                 <motion.div
                     className="skillBox__frontEnd--box"
