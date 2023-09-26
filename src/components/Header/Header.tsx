@@ -1,5 +1,6 @@
 import './Header.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from "react-router-hash-link"
 
 function Header() {
@@ -7,7 +8,11 @@ function Header() {
     const [showLinks, setShowLinks] = useState(false)
 
 
+    const location = useLocation()
 
+    useEffect(() => {
+        setShowLinks(false)
+    }, [location])
 
 
     const handleShowLinks = () => {
