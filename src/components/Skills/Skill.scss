@@ -38,7 +38,7 @@
 }
 
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1000px) {
     .skillHeader {
         display: flex;
         justify-content: center;
@@ -66,6 +66,7 @@
                 transition: 0.3s;
                 gap: 1rem;
                 border: dashed v.$background-project;
+
 
                 &:hover {
                     background-color: v.$background-project;

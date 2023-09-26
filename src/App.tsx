@@ -10,9 +10,15 @@ import Project from './components/Project/Project';
 import Skill from './components/Skills/Skill.js';
 import Contact from './components/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
+import { Reveal } from './utils/Reveal.js';
+
+
+
+
 
 
 function App() {
+
 
 
   return (
@@ -20,10 +26,13 @@ function App() {
       <Header />
       <main className="main">
         <Portrait />
-        <Project data={data} />
+        <Reveal>
+          <Project data={data} />
+        </Reveal>
+
         <Skill skillFrontEnd={skillFrontEnd} />
         <Contact />
-      </main>
+      </main >
       <footer className="footer">
         <Footer />
       </footer>

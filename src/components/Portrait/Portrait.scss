@@ -8,13 +8,17 @@
     flex-direction: column;
 
     &__face {
-        width: 60%;
+        width: 50%;
 
         border-radius: 50%;
         overflow: hidden;
         background-image: radial-gradient(#fff, #0000);
         animation: background 10s linear infinite;
         margin-bottom: 3rem;
+
+        &-desktop {
+            display: none;
+        }
 
 
     }
@@ -29,9 +33,7 @@
         &-intro {
             font-size: 7vw;
             font-weight: bold;
-            background: linear-gradient(to right, #98b2e7, #4272d2,
-                    #ca38f2, #ca38f2);
-            -webkit-text-fill-color: transparent;
+            color: white;
             -webkit-background-clip: text;
         }
 
@@ -48,16 +50,20 @@
     &__link {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
         margin-bottom: 5rem;
 
 
         &-item {
             display: flex;
+            font-weight: bold;
+            color: #453948;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             padding: 10px;
-            background-color: #2d72fc48;
+            background-color: #ffffff;
             width: 10rem;
             border-radius: 20px;
             transition: 0.3s;
@@ -66,18 +72,24 @@
     }
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:1000px) {
 
 
 
     .portrait {
         flex-direction: row;
-        margin-top: 3rem;
+        gap: 2rem;
+        padding: 3rem;
+        background-color: #000000;
+        border-radius: 20px;
 
         &__face {
-            width: 60vw;
-            margin-bottom: 0;
-            margin-right: 3rem;
+            display: none;
+
+            &-desktop {
+                display: block;
+                width: 35%;
+            }
         }
 
         &__resume {
@@ -88,12 +100,16 @@
             }
 
             &-name {
-                font-size: 5rem;
+                font-size: 4.5rem;
+                padding: 3rem;
+
+
             }
         }
 
         &__link {
             margin-bottom: 15rem;
+
 
             &-item:hover {
                 background-color: v.$font-color;
@@ -104,6 +120,8 @@
             }
         }
     }
+
+
 
 
 }

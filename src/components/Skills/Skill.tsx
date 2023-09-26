@@ -1,15 +1,52 @@
 import './Skill.scss';
 import { SkillsArray, Skills } from '../../assets/Interface/skillInterface';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 function Skill({ skillFrontEnd }: SkillsArray) {
-    console.log(skillFrontEnd);
+
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    const mainControls = useAnimation();
+    const backControls = useAnimation();
+    const frontControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            console.log("!!");
+            mainControls.start("visible");
+            backControls.start("visible");
+            frontControls.start("visible");
+
+        }
+    }, [isInView])
 
     return (
         <>
-            <h2 className="skillHeader__title">Skills</h2>
-            <section className="skillHeader">
+            <motion.h2 className="skillHeader__title"
+
+                variants={{
+                    hidden: { opacity: 0, x: -500 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 1.5, delay: 1 }}>SKILLS
+            </motion.h2>
+            <section className="skillHeader"
+                ref={ref}>
                 <h3 className="skillBox__frontEnd--title">Front-End</h3>
-                <div className="skillBox__frontEnd--box">
+                <motion.div
+                    className="skillBox__frontEnd--box"
+                    variants={{
+                        hidden: { opacity: 0, x: -500 },
+                        visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={frontControls}
+                    transition={{ duration: 0.5, delay: 2 }}
+                >
                     <h3 className="skillBox__frontEnd--title-desktop">Front-End</h3>
                     {skillFrontEnd.slice(0, 3).map((skill: Skills) => (
                         <div className="skillBox__frontEnd--item"
@@ -20,9 +57,16 @@ function Skill({ skillFrontEnd }: SkillsArray) {
                                 className="skillBox__frontEnd--item-name">{skill.name}</h3>
                         </div>
                     ))}
-                </div>
+                </motion.div>
                 <h3 className="skillBox__frontEnd--title">Back-End</h3>
-                <div className="skillBox__frontEnd--box">
+                <motion.div className="skillBox__frontEnd--box"
+                    variants={{
+                        hidden: { opacity: 0, x: 500 },
+                        visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={backControls}
+                    transition={{ duration: 0.5, delay: 2 }}>
                     <h3 className="skillBox__frontEnd--title-desktop">Back-End</h3>
                     {skillFrontEnd.slice(3, 6).map((skill: Skills) => (
                         <div className="skillBox__frontEnd--item"
@@ -32,7 +76,7 @@ function Skill({ skillFrontEnd }: SkillsArray) {
                                 style={{ color: skill.color }}>{skill.name}</h3>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </section>
         </>
     )
