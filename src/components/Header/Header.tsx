@@ -2,6 +2,7 @@ import './Header.scss';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from "react-router-hash-link"
+import DarkMode from '../DarkMode/DarkMode';
 
 function Header() {
 
@@ -30,6 +31,9 @@ function Header() {
                 </li>
                 <li >
                     <Link to="#Contact" className='header__navbar-links-item'>Contact</Link>
+                </li>
+                <li className='header__navbar-links-item-darkmode'>
+                    <DarkMode />
                 </li>
             </ul>
             <button className='header__navbar-burger'
