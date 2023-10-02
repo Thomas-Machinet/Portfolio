@@ -5,11 +5,11 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
-    --body_background: #000000;
-    --body_color: rgb(255, 255, 255);
-    --body_colorResume: rgb(91, 89, 89);
-    --nav_background: grey;
-    --section_background: white;
+    --body_background: rgb(14, 0, 28);
+    --body_color: white;
+    --body_colorResume: #57c7f0;
+    --nav_background: black;
+    --section_background: #574D7C;
 }
 
 [data-theme="dark"] {
@@ -22,7 +22,7 @@
 
 [data-theme="light"] {
     --body_background: #ffdcc0;
-    --body_color: black;
+    --body_color: #000000;
     --body_colorResume: rgb(91, 89, 89);
     --nav_background: #fdebdc;
     --section_background: #fde8d6;
