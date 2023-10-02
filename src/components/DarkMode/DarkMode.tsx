@@ -1,3 +1,4 @@
+import React from 'react';
 import './DarkMode.scss';
 
 
@@ -19,7 +20,7 @@ const DarkMode = () => {
     }
 
 
-    const toggleTheme = (e) => {
+    const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.checked) setDarkMode();
         else setLightMode()
     }

@@ -24,7 +24,7 @@
     }
 
     &__resume {
-        color: v.$font-color;
+        color: var(--body_colorResume);
         font-size: 5vw;
         display: flex;
         flex-direction: column;
@@ -34,7 +34,7 @@
         &-intro {
             font-size: 7vw;
             font-weight: bold;
-            color: white;
+            color: var(--body_color);
             -webkit-background-clip: text;
         }
 
@@ -82,6 +82,8 @@
         gap: 2rem;
         padding: 3rem;
         border-radius: 20px;
+        background-color: var(--section_background);
+        margin-bottom: 1rem;
 
         &__face {
             display: none;
@@ -112,10 +114,10 @@
 
 
             &-item:hover {
-                background-color: v.$font-color;
+                background-color: var(--body_colorResume);
                 box-shadow: 0 7px 0 rgb(0, 0, 0);
                 scale: 1.1;
-                color: black;
+                color: var(--body_color);
                 font-weight: bold;
             }
         }

@@ -5,18 +5,27 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
-    --body_background: #bebebe;
-    --body_color: black;
+    --body_background: #000000;
+    --body_color: rgb(255, 255, 255);
+    --body_colorResume: rgb(91, 89, 89);
+    --nav_background: grey;
+    --section_background: white;
 }
 
 [data-theme="dark"] {
-    --body_background: black;
+    --body_background: rgb(14, 0, 28);
     --body_color: white;
+    --body_colorResume: #57c7f0;
+    --nav_background: black;
+    --section_background: #574D7C;
 }
 
 [data-theme="light"] {
-    --body_background: #bebebe;
-    --body_color: black
+    --body_background: #ffdcc0;
+    --body_color: black;
+    --body_colorResume: rgb(91, 89, 89);
+    --nav_background: #fdebdc;
+    --section_background: #fde8d6;
 }
 
 body {
@@ -32,7 +41,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+
 }
 
 h1,
@@ -46,7 +55,7 @@ p {
 }
 
 h2 {
-    color: #fff;
+    color: var(--body_color);
     text-align: center;
     padding: 2rem 0;
     font-size: 7vw;
