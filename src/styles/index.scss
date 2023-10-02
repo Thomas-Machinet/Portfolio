@@ -28,6 +28,10 @@
     --section_background: #fde8d6;
 }
 
+[data-theme] {
+    transition: all 0.3s ease-in-out;
+}
+
 body {
     background-color: var(--body_background);
     color: var(--body_color);
