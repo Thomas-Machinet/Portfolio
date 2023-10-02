@@ -8,7 +8,7 @@ export default [
             {
                 id: 1,
                 name: "React",
-                color: "#fc0000"
+                color: "#00CCFF"
             },
             {
                 id: 2,
@@ -32,7 +32,7 @@ export default [
             {
                 id: 1,
                 name: "React",
-                color: "#fc0000"
+                color: "#00CCFF"
             },
             {
                 id: 2,

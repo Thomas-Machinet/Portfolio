@@ -17,8 +17,8 @@
     .project {
         flex-direction: row;
         padding: 3rem;
-        border: 3px dashed;
+        border: 7px dashed;
         border-radius: 15px;
-        border-color: v.$font-color ;
+        border-color: var(--body_colorResume);
     }
 }

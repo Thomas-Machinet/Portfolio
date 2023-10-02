@@ -2,11 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-html,
-body {
-    background: #f1f1f1;
-    font-family: 'Merriweather', sans-serif;
-}
+
 
 
 
@@ -35,14 +31,14 @@ textarea {
 
 #input-submit {
     color: white;
-    background: #9582d7;
-    transition: 0.3s;
+    background: #c96c68;
+    transition: 0.8s;
     cursor: pointer;
 }
 
 #input-submit:hover {
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
-    background: v.$background-project;
+    background: #CF4A43;
 }
 
 textarea {

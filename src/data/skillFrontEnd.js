@@ -33,6 +33,6 @@ export default [{
     id: 6,
     name: 'Express',
     link: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png',
-    color: '#000000F',
+    color: '#000000',
 },
 ]

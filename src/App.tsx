@@ -2,6 +2,7 @@ import './App.css'
 // Import Data
 import data from './data/project.js';
 import skillFrontEnd from './data/skillFrontEnd.js';
+import logo from '../public/Logo.png'
 
 // importation components
 import Header from './components/Header/Header';
@@ -29,6 +30,9 @@ function App() {
         <a href='#'
           className='arrowUp'><ArrowUpCircle size="50px" /></a>
       }
+      <img className='logo'
+        src={logo}
+        alt='logo' />
       <Header />
       <main className="main">
         <Portrait />
