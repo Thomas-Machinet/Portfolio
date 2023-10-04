@@ -10,6 +10,10 @@
     gap: 1rem;
     color: var(--body_color);
 
+    &-image-desktop {
+        display: none;
+    }
+
     &-text {
         display: flex;
         flex-direction: column;
@@ -37,10 +41,15 @@
 
 
 @media screen and (min-width: 767px) {
-    .project__image {
+    .project__card-image {
         width: 100%;
         border-radius: 15px;
         z-index: 2;
+        display: none;
+
+        &-desktop {
+            display: block;
+        }
     }
 
     .project__card {

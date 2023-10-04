@@ -8,6 +8,8 @@ export interface ProjectItem {
     link: string,
     techno: Techno[],
     title: string,
+    image: string,
+    imageDesktop: string,
 }
 
 export interface Techno {
