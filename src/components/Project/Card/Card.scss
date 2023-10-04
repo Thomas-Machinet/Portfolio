@@ -101,11 +101,11 @@
         }
 
         &-link {
-            transition: 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
 
             &:hover {
                 background-color: #fff;
-                scale: 0.9;
+                transform: scale(0.9);
             }
         }
 
