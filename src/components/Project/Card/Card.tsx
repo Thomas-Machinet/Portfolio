@@ -20,13 +20,13 @@ function Card({ resume, techno, title, link, image, imageDesktop }: ProjectItem)
                 <img src={image} alt="project" className="project__card-image" />
                 <img src={imageDesktop} alt="project" className="project__card-image-desktop" />
                 <div className="project__card-text">
-                    <h3 className="project__card-title">{title}</h3>
-                    <p className="project__card-resume">{resume}</p>
-                    <ul className="project__card-techno">
+                    <h3 className="project__card-text-title">{title}</h3>
+                    <p className="project__card-text-resume">{resume}</p>
+                    <ul className="project__card-text-techno">
                         {techno.map((technoItem: Techno) => (
                             <li
                                 key={technoItem.id}
-                                className="project__card-techno-item"
+                                className="project__card-text-techno-item"
                                 style={{ backgroundColor: technoItem.color }}
                             >
                                 {technoItem.name}
