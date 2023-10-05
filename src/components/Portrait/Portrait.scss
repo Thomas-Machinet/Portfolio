@@ -8,8 +8,7 @@
     flex-direction: column;
 
     &__face {
-        width: 50%;
-
+        width: 50vw;
         border-radius: 50%;
         overflow: hidden;
         background-image: radial-gradient(#fff, #0000);
@@ -73,7 +72,19 @@
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:756px) {
+    .portrait {
+        &__face {
+            width: 30vw;
+        }
+
+        &__resume {
+            font-size: 3vw;
+        }
+    }
+}
+
+@media screen and (min-width:1800px) {
 
 
 

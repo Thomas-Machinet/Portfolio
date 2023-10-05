@@ -87,7 +87,13 @@ h2 {
     width: 20vw;
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:756px) {
+    .main {
+        padding: 6rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
 
     h2 {
         font-size: 3vw;
