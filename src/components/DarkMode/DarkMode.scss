@@ -5,8 +5,8 @@
 .dark_mode_label {
     width: 65px;
     height: 30px;
-    position: absolute;
-    top: 90%;
+    bottom: 47.5rem;
+    position: relative;
     display: block;
     background: #ebebeb;
     border-radius: 200px;
@@ -47,4 +47,11 @@
 
 .dark_mode_label:active:after {
     width: 30px;
+}
+
+@media screen and (min-width:756px) {
+    .dark_mode_label {
+        top: 0.6rem;
+        bottom: 0rem;
+    }
 }
