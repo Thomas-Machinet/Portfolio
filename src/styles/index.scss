@@ -91,10 +91,17 @@ h2 {
     .main {
         padding: 6rem;
     }
+
+    .logo {
+        width: 10vw;
+    }
 }
 
-@media screen and (min-width:1000px) {
 
+
+
+
+@media screen and (min-width: 2000px) {
     h2 {
         font-size: 3vw;
         margin-top: 3rem;

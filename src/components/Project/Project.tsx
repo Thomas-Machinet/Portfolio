@@ -3,7 +3,7 @@ import Card from './Card/Card';
 
 // Interface 
 import { ProjectArray, ProjectItem } from '../../assets/Interface/projectInterface';
-import { motion, useScroll, scroll, progress, animate, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
 function Project({ data }: ProjectArray) {
