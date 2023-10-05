@@ -72,19 +72,38 @@
     }
 }
 
-@media screen and (min-width:756px) {
+@media screen and (min-width:500px) {
     .portrait {
+        flex-direction: row;
+        gap: 2rem;
+        background-color: var(--section_background);
+        padding: 1rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+
+
         &__face {
-            width: 30vw;
+            width: 35%;
         }
 
         &__resume {
-            font-size: 3vw;
+            width: 60%;
+            font-size: 1rem;
+
+            &-intro {
+                font-size: 2rem;
+            }
+
+            &-name {
+                font-size: 2.2rem;
+            }
         }
     }
 }
 
-@media screen and (min-width:1800px) {
+
+
+@media screen and (min-width:1000px) {
 
 
 
