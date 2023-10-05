@@ -11,14 +11,13 @@
 
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:1000px) {
 
 
     .project {
         flex-direction: row;
         padding: 3rem;
-        border: 7px dashed;
         border-radius: 15px;
-        border-color: var(--body_colorResume);
+        background-color: var(--section_background);
     }
 }

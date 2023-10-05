@@ -8,8 +8,7 @@
     flex-direction: column;
 
     &__face {
-        width: 50%;
-
+        width: 50vw;
         border-radius: 50%;
         overflow: hidden;
         background-image: radial-gradient(#fff, #0000);
@@ -72,6 +71,37 @@
         }
     }
 }
+
+@media screen and (min-width:500px) {
+    .portrait {
+        flex-direction: row;
+        gap: 2rem;
+        background-color: var(--section_background);
+        padding: 1rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+
+
+        &__face {
+            width: 35%;
+        }
+
+        &__resume {
+            width: 60%;
+            font-size: 1rem;
+
+            &-intro {
+                font-size: 2rem;
+            }
+
+            &-name {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+
 
 @media screen and (min-width:1000px) {
 

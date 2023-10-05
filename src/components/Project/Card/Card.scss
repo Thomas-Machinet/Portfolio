@@ -10,20 +10,26 @@
     gap: 1rem;
     color: var(--body_color);
 
+    &-image-desktop {
+        display: none;
+    }
+
     &-text {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    &-techno {
-        display: flex;
-        gap: 2rem;
 
-        &-item {
-            padding: 5px;
-            border-radius: 15px;
-            color: #fff;
+
+        &-techno {
+            display: flex;
+            gap: 2rem;
+
+            &-item {
+                padding: 5px;
+                border-radius: 15px;
+                color: #fff;
+            }
         }
     }
 
@@ -36,60 +42,80 @@
 }
 
 
-@media screen and (min-width: 767px) {
-    .project__image {
-        width: 100%;
-        border-radius: 15px;
-        z-index: 2;
-    }
-
+@media screen and (min-width: 1000px) {
     .project__card {
-        background-color: transparent;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s;
         cursor: pointer;
 
+
+
+        &-image {
+            display: none;
+
+            &-desktop {
+                transform-style: preserve-3d;
+                transition: transform 1s;
+
+                perspective: 1000px;
+                display: block;
+                width: 80%;
+
+                &:hover {
+                    transform: rotateY(180deg);
+                    filter: brightness(0.1);
+
+                    /* Ajoutez ces lignes pour afficher le texte au survol */
+                    +.project__card-text {
+                        visibility: visible;
+                        animation: fade 3.5s;
+                    }
+
+                }
+            }
+        }
+
         &-text {
+            padding: 1rem;
+            width: 18vw;
+            font-size: 1.5rem;
+            position: absolute;
+            top: 50%;
             visibility: hidden;
-            background: #66B4FF;
-            padding: 2.5rem;
-            border-radius: 50%;
-            z-index: 1;
-            position: relative;
-        }
+            color: #fff;
 
-        &:hover .project__card-text {
-            visibility: visible;
-            animation: slideFromLeft 0.7s forwards;
-        }
+            &:hover {
+                visibility: visible;
+                animation: fade 3s;
+            }
 
-        &:hover {
-            background: var(--section_background);
+            &-title {
+                display: none;
+            }
+
         }
 
         &-link {
-            transition: 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
 
             &:hover {
                 background-color: #fff;
-                color: black;
-                box-shadow: 5px 5px 5px gray;
+                transform: scale(0.9);
             }
         }
+
+
     }
+
+
 }
 
-/* Définir l'animation de glissement depuis la gauche */
-@keyframes slideFromLeft {
+// Animation 
+
+@keyframes fade {
     0% {
-        top: -50%;
-        /* Commencez à l'extérieur à gauche */
+        opacity: 0;
     }
 
     100% {
-        top: 0%;
-        /* Finissez à la position d'origine */
+        opacity: 1;
     }
 }

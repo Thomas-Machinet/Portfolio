@@ -1,10 +1,9 @@
 import './Card.scss';
 import { ProjectItem, Techno } from '../../../assets/Interface/projectInterface';
 import { GitHub } from 'react-feather';
-import projectVisual from "../../../../public/Desktop Screenshot 2023.08.21 - 15.09.15.74.png"
 import { motion } from 'framer-motion';
 
-function Card({ resume, techno, title, link }: ProjectItem) {
+function Card({ resume, techno, title, link, image, imageDesktop }: ProjectItem) {
 
     return (
         <>
@@ -18,15 +17,16 @@ function Card({ resume, techno, title, link }: ProjectItem) {
                     ease: [0, 0.5, 0.7, 1]
                 }}
             >
-                <img src={projectVisual} alt="project" className="project__image" />
+                <img src={image} alt="project" className="project__card-image" />
+                <img src={imageDesktop} alt="project" className="project__card-image-desktop" />
                 <div className="project__card-text">
-                    <h3 className="project__card-title">{title}</h3>
-                    <p className="project__card-resume">{resume}</p>
-                    <ul className="project__card-techno">
+                    <h3 className="project__card-text-title">{title}</h3>
+                    <p className="project__card-text-resume">{resume}</p>
+                    <ul className="project__card-text-techno">
                         {techno.map((technoItem: Techno) => (
                             <li
                                 key={technoItem.id}
-                                className="project__card-techno-item"
+                                className="project__card-text-techno-item"
                                 style={{ backgroundColor: technoItem.color }}
                             >
                                 {technoItem.name}
