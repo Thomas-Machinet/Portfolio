@@ -15,7 +15,7 @@ function Portrait() {
                     duration: 2,
                     x: { duration: 1 }
                 }}
-                className="title">WHO I'M I ?</motion.h2>
+                className="title">WHO I'M I?</motion.h2>
             <motion.section
                 className="portrait"
                 animate={{ x: [1500, 0], opacity: [0, 1] }}

@@ -55,7 +55,19 @@
     .project__card {
         cursor: pointer;
 
+        &:hover {
 
+            /* Ajoutez cette pseudo-classe sur le parent */
+            .project__card-image-desktop {
+                transform: rotateY(180deg);
+                filter: brightness(0.1);
+            }
+
+            .project__card-text {
+                visibility: visible;
+                animation: fade 3.5s;
+            }
+        }
 
         &-image {
             display: none;
@@ -67,37 +79,30 @@
                 perspective: 1000px;
                 display: block;
                 width: 80%;
-
-                &:hover {
-                    transform: rotateY(180deg);
-                    filter: brightness(0.1);
-
-                    /* Ajoutez ces lignes pour afficher le texte au survol */
-                    +.project__card-text {
-                        visibility: visible;
-                        animation: fade 3.5s;
-                    }
-
-                }
             }
         }
 
         &-text {
-            padding: 1rem;
+            padding: 2rem;
             width: 18vw;
-            font-size: 1.5rem;
+            text-align: justify;
+            font-size: 1.2rem;
             position: absolute;
-            top: 50%;
+            top: 25%;
             visibility: hidden;
             color: #fff;
+            font-weight: bold;
 
-            &:hover {
-                visibility: visible;
-                animation: fade 3s;
+            &-resume {
+                margin-bottom: 15rem;
             }
 
             &-title {
                 display: none;
+            }
+
+            &-techno-item {
+                font-weight: bold;
             }
 
         }
@@ -110,11 +115,7 @@
                 transform: scale(0.9);
             }
         }
-
-
     }
-
-
 }
 
 // Animation 

@@ -106,15 +106,13 @@
 
 @media screen and (min-width:1000px) {
 
-
-
     .portrait {
         flex-direction: row;
         gap: 2rem;
         padding: 3rem;
         border-radius: 20px;
         background-color: var(--section_background);
-        margin-bottom: 1rem;
+
 
         &__face {
             display: none;
@@ -148,7 +146,7 @@
                 background-color: var(--body_colorResume);
                 box-shadow: 0 7px 0 rgb(0, 0, 0);
                 scale: 1.1;
-                color: var(--body_color);
+                color: white;
                 font-weight: bold;
             }
         }
