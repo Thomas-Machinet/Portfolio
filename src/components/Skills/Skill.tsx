@@ -33,10 +33,10 @@ function Skill({ skillFrontEnd }: SkillsArray) {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 1.5, delay: 1 }}>SKILLS
+                transition={{ duration: 1, delay: 0.3 }}>SKILLS
             </motion.h2>
             <section className="skillHeader"
-                ref={ref}>
+            >
                 <h3 className="skillBox__frontEnd--title">Front-End</h3>
                 <motion.div
                     className="skillBox__frontEnd--box"
@@ -46,11 +46,12 @@ function Skill({ skillFrontEnd }: SkillsArray) {
                     }}
                     initial="hidden"
                     animate={frontControls}
-                    transition={{ duration: 0.5, delay: 2 }}
+                    transition={{ duration: 1, delay: 0.3 }}
                 >
                     <h3 className="skillBox__frontEnd--title-desktop">Front-End</h3>
                     {skillFrontEnd.slice(0, 3).map((skill: Skills) => (
                         <div className="skillBox__frontEnd--item"
+                            ref={ref}
                             key={skill.id}>
                             <img src={skill.link} alt="skill" className="skillBox__frontEnd--item-image" />
                             <h3
@@ -67,7 +68,7 @@ function Skill({ skillFrontEnd }: SkillsArray) {
                     }}
                     initial="hidden"
                     animate={backControls}
-                    transition={{ duration: 0.5, delay: 2 }}>
+                    transition={{ duration: 1, delay: 0.3 }}>
                     <h3 className="skillBox__frontEnd--title-desktop">Back-End</h3>
                     {skillFrontEnd.slice(3, 6).map((skill: Skills) => (
                         <div className="skillBox__frontEnd--item"

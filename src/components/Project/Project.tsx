@@ -38,7 +38,7 @@ function Project({ data }: ProjectArray) {
                     }}
                     initial="hidden"
                     animate={mainControls}
-                    transition={{ duration: 1.5, delay: 0.3 }}
+                    transition={{ duration: 1, delay: 0.3 }}
                     className="project__header"
                 >PROJECT
                 </motion.h2>
@@ -53,7 +53,7 @@ function Project({ data }: ProjectArray) {
                     }}
                     initial="hidden"
                     animate={projectControls}
-                    transition={{ duration: 1.5, delay: 0.3 }}>
+                    transition={{ duration: 1, delay: 0.3 }}>
                     {data.map((project: ProjectItem) => (
                         <Card key={project.id} {...project} />
                     ))}

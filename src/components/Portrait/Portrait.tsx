@@ -12,7 +12,7 @@ function Portrait() {
                 animate={{ x: [-1500, 0] }}
                 transition={{
                     ease: "linear",
-                    duration: 2,
+                    duration: 1,
                     x: { duration: 1 }
                 }}
                 className="title">WHO I'M I?</motion.h2>
