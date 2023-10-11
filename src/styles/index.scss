@@ -26,7 +26,7 @@
     --body_color: #000000;
     --body_colorResume: rgb(91, 89, 89);
     --nav_background: #fdebdc;
-    --section_background: #fde8d6;
+    --section_background: #f9f0e8;
 }
 
 [data-theme] {
@@ -91,13 +91,19 @@ h2 {
     .main {
         padding: 6rem;
     }
+
+    .logo {
+        width: 10vw;
+    }
 }
 
-@media screen and (min-width:1000px) {
 
+
+
+
+@media screen and (min-width: 2000px) {
     h2 {
         font-size: 3vw;
-        margin-top: 3rem;
     }
 
     .main {

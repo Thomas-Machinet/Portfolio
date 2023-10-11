@@ -82,6 +82,7 @@
         margin-bottom: 2rem;
 
 
+
         &__face {
             width: 35%;
         }
@@ -105,15 +106,13 @@
 
 @media screen and (min-width:1000px) {
 
-
-
     .portrait {
         flex-direction: row;
         gap: 2rem;
         padding: 3rem;
         border-radius: 20px;
         background-color: var(--section_background);
-        margin-bottom: 1rem;
+
 
         &__face {
             display: none;
@@ -121,6 +120,7 @@
             &-desktop {
                 display: block;
                 width: 35%;
+                clip-path: ellipse(120% 70% at -5% 30%);
             }
         }
 
@@ -147,7 +147,7 @@
                 background-color: var(--body_colorResume);
                 box-shadow: 0 7px 0 rgb(0, 0, 0);
                 scale: 1.1;
-                color: var(--body_color);
+                color: white;
                 font-weight: bold;
             }
         }

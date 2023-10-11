@@ -24,7 +24,7 @@
             gap: 2rem;
             background-color: var(--section_background);
             padding: 1rem;
-            border-radius: 0 0 15px 15px;
+            border-radius: 15px;
             margin-bottom: 2rem;
         }
 
@@ -38,6 +38,33 @@
     }
 }
 
+@media screen and (min-width: 500px) {
+    .skillHeader {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+    .skillBox {
+        &__frontEnd {
+            &--box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &--title {
+                display: none;
+
+                &-desktop {
+                    display: block;
+
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1000px) {
     .skillHeader {

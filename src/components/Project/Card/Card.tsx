@@ -18,7 +18,7 @@ function Card({ resume, techno, title, link, image, imageDesktop }: ProjectItem)
                 }}
             >
                 <img src={image} alt="project" className="project__card-image" />
-                <img src={imageDesktop} alt="project" className="project__card-image-desktop" />
+                <img src={imageDesktop} alt="project" id='image_desktop' className="project__card-image-desktop" />
                 <div className="project__card-text">
                     <h3 className="project__card-text-title">{title}</h3>
                     <p className="project__card-text-resume">{resume}</p>
