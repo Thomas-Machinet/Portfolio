@@ -1,4 +1,4 @@
-export default [
+const projectData = [
     {
         id: 1,
         title: "Game'O'Quiz",
@@ -23,7 +23,8 @@ export default [
                 color: "#C6538C"
             }
         ]
-    },
+    }
+    ,
     {
         id: 2,
         title: "Portfolio",
@@ -48,7 +49,8 @@ export default [
                 color: "#C6538C"
             }
         ]
+    }
 
-    },
+];
 
-]
+export default projectData;

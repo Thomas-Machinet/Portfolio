@@ -2,7 +2,6 @@ import './Header.scss';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from "react-router-hash-link"
-import logo from '../../../public/Logo.png'
 import DarkMode from '../DarkMode/DarkMode';
 
 function Header() {

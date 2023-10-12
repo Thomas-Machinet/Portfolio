@@ -1,7 +1,7 @@
 import './App.css'
 // Import Data
-import data from './data/project.js';
-import skillFrontEnd from './data/skillFrontEnd.js';
+import projectData from './data/project.ts';
+import skillFrontEndData from './data/skillFrontEnd.ts';
 import logo from '../public/Logo.png'
 
 // importation components
@@ -37,10 +37,10 @@ function App() {
       <main className="main">
         <Portrait />
         <Reveal>
-          <Project data={data} />
+          <Project data={projectData} />
         </Reveal>
 
-        <Skill skillFrontEnd={skillFrontEnd} />
+        <Skill skillFrontEnd={skillFrontEndData} />
         <Contact />
       </main >
       <footer className="footer">

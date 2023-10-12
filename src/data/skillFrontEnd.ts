@@ -1,4 +1,4 @@
-export default [{
+const techno = [{
     id: 1,
     name: 'React',
     link: '../public/Techno/react.png',
@@ -36,3 +36,5 @@ export default [{
     color: '#000000',
 },
 ]
+
+export default techno;
