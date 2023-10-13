@@ -6,6 +6,8 @@ import { ProjectArray, ProjectItem } from '../../assets/Interface/projectInterfa
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
+
+
 function Project({ data }: ProjectArray) {
 
     const ref = useRef(null)
