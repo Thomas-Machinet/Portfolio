@@ -30,7 +30,7 @@ const projectData = [
         title: "Portfolio",
         image: "../public/PortFolioMobile.png",
         imageDesktop: "../public/PortFolio.png",
-        resume: "Game'O'Quiz is a website that compiles several quizzes, allowing users to complete them and obtain a score upon completion, Project carried out as part of the assessment for my web developer training",
+        resume: "Creating my portfolio allowed me to use the skills acquired during my education in a page that will help me showcase all of my projects.",
         link: "https://github.com/O-clock-Quasar/projet-09-quiz-o-tron-front",
         techno: [
             {
