@@ -31,7 +31,7 @@ const projectData = [
         image: "../public/PortFolioMobile.png",
         imageDesktop: "../public/PortFolio.png",
         resume: "Creating my portfolio allowed me to use the skills acquired during my education in a page that will help me showcase all of my projects.",
-        link: "https://github.com/O-clock-Quasar/projet-09-quiz-o-tron-front",
+        link: "https://github.com/Thomas-Machinet/Portfolio",
         techno: [
             {
                 id: 1,
