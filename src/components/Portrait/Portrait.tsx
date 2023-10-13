@@ -1,5 +1,5 @@
-import face from '../../../public/Design_sans_titre__1_-removebg-preview.png'
-import faceDesktop from '../../../public/Design_sans_titre-removebg.png'
+import face from '/Design_sans_titre__1_-removebg-preview.png'
+import faceDesktop from '/Design_sans_titre-removebg.png'
 import CV from '../../../public/CV.pdf'
 import { GitHub, Linkedin, Download } from 'react-feather';
 import './Portrait.scss'

@@ -2,8 +2,8 @@ const projectData = [
     {
         id: 1,
         title: "Game'O'Quiz",
-        image: "../public/Game'O'QuizMobile.png",
-        imageDesktop: "../public/Game'O'Quiz.png",
+        image: "/Game'O'QuizMobile.png",
+        imageDesktop: "/Game'O'Quiz.png",
         resume: "Game'O'Quiz is a website that compiles several quizzes, allowing users to complete them and obtain a score upon completion, Project carried out as part of the assessment for my web developer training",
         link: "https://github.com/O-clock-Quasar/projet-09-quiz-o-tron-front",
         techno: [
@@ -28,8 +28,8 @@ const projectData = [
     {
         id: 2,
         title: "Portfolio",
-        image: "../public/PortFolioMobile.png",
-        imageDesktop: "../public/PortFolio.png",
+        image: "/PortFolioMobile.png",
+        imageDesktop: "/PortFolio.png",
         resume: "Creating my portfolio allowed me to use the skills acquired during my education in a page that will help me showcase all of my projects.",
         link: "https://github.com/Thomas-Machinet/Portfolio",
         techno: [

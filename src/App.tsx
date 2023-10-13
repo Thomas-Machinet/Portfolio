@@ -2,7 +2,7 @@ import './App.css'
 // Import Data
 import projectData from './data/project.ts';
 import skillFrontEndData from './data/skillFrontEnd.ts';
-import logo from '../public/Logo.png'
+import logo from '/Logo.png'
 
 // importation components
 import Header from './components/Header/Header';
